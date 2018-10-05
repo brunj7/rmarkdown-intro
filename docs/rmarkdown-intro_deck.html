@@ -1,22 +1,25 @@
----
-title: "Making your work reproducible"
-subtitle: "with `Rmarkdown` "
-author: "Julien Brun, NCEAS"
-date: "Eco-Data-Science, 2018-10-09"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    # chakra: "libs/remark-latest.min.js"
-    css: ["my-theme.css", "libs/remark-css/default-fonts.css"]
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Making your work reproducible</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Julien Brun, NCEAS" />
+    <link rel="stylesheet" href="my-theme.css" type="text/css" />
+    <link rel="stylesheet" href="libs/remark-css/default-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Making your work reproducible
+## with <code>Rmarkdown</code>
+### Julien Brun, NCEAS
+### Eco-Data-Science, 2018-10-09
+
 ---
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+
+
 
 
 background-image: url(images/stickynotes.png)
@@ -42,11 +45,11 @@ class: inverse, center, middle
 ### Create our First R Markdown Document
 
 - From `Rstudio` create a new R Markdown document:  
-`File -> New File -> R Markdown`
+`File -&gt; New File -&gt; R Markdown`
 
 - Keep the default options and fill up the `Title` and `Author` fields
 
-.center[<img src="images/create-rmarkdown.png"  alt="New R Markdown" height="320" />]
+.center[&lt;img src="images/create-rmarkdown.png"  alt="New R Markdown" height="320" /&gt;]
 
 .footnote[
 _Note: In this workshop we will use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to !_
@@ -60,11 +63,11 @@ _Note: In this workshop we will use the [RStudio IDE](https://www.rstudio.com/pr
 
 - Click the `Knit` button to render the document
 ]
-<br>
+&lt;br&gt;
 
 .center[![](images/knit-button.png)]
 
-<br>
+&lt;br&gt;
 
 .large[Note: you could also enter this command at the R console:  `rmarkdown::render("rmkdown1.Rmd")`
 ]
@@ -78,7 +81,7 @@ class: inverse, center, middle
 
 ## R Markdown Document Structure
 
-<img align="right" src="images/rmarkdown-doc-structure.png" width="40%" />
+&lt;img align="right" src="images/rmarkdown-doc-structure.png" width="40%" /&gt;
 
 .pull-left[
 .large[
@@ -96,7 +99,7 @@ class: inverse, center, middle
 
 ---
 
-<img align="right" src="images/markdown-logo.png" width="20%" />
+&lt;img align="right" src="images/markdown-logo.png" width="20%" /&gt;
 
 # Markdown
 
@@ -111,10 +114,10 @@ Document styles can be customized with `HTML/CSS` and math notation can be inclu
 ```
 $\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$
 ```
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
+`$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$`
 ]
 
-<br>
+&lt;br&gt;
 
 .footnote[
 _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibility-guide/sections/tools/)_
@@ -127,12 +130,12 @@ _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibilit
 .large[
 `R Markdown`: An _enhanced_ flavor of `Markdown` that recognizes _**`R` code chunks**_, which allows the embedding of R directly into a Markdown document to create dynamic and reproducible documents. 
 ]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
 
 .footnote[
 _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibility-guide/sections/tools/)_
@@ -185,16 +188,16 @@ class: inverse, center, middle
 
 ---
 
-<img align="right" src="images/hex-rmarkdown.png" width="15%" />
+&lt;img align="right" src="images/hex-rmarkdown.png" width="15%" /&gt;
 
 ## Why R Markdown can help reproducibility
 
 .large[
 - Combine **code** and **documentation** in **one** document/file  
-_=> Promote literate programming_
+_=&gt; Promote literate programming_
 
 - Help to generate compelling documents  
-_=> reports, journal articles, presentations, ..._
+_=&gt; reports, journal articles, presentations, ..._
 
 - Easy to **share** through various formats  
 _websites, blogs, dashboards, interactive visualizations_
@@ -207,7 +210,7 @@ _Python, bash, SQL, ..._
 
 ---
 
-<img align="right" src="images/hex-rmarkdown.png" width="15%">
+&lt;img align="right" src="images/hex-rmarkdown.png" width="15%"&gt;
 
 ## What can you do with R Markdown ?
 
@@ -234,8 +237,8 @@ _Python, bash, SQL, ..._
 
 ## R Markdown has a dynamic community !!
 
-<img align="Left" src="images/rmarkdown-radix.png" width="50%" alt="radix">
-<img align="right" src="images/rmarkdown_tips.png" width="50%" alt="comment">
+&lt;img align="Left" src="images/rmarkdown-radix.png" width="50%" alt="radix"&gt;
+&lt;img align="right" src="images/rmarkdown_tips.png" width="50%" alt="comment"&gt;
 
 ---
 class: inverse, center, middle
@@ -252,8 +255,8 @@ class: inverse, center, middle
 
 - When you knit a R Markdown document, the paths to external files (data, images, ...) are **relative to the document**
 
-<br>
-**_=> If you R Markdown document is in a sub-directory,  relative paths are different_**
+&lt;br&gt;
+**_=&gt; If you R Markdown document is in a sub-directory,  relative paths are different_**
 ]
 
 .footnote[
@@ -304,5 +307,51 @@ class: inverse, center, middle
 - Comment your code well
 - Share your code 
 ]
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
 
-
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
