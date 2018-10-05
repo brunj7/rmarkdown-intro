@@ -1,0 +1,8 @@
+.xlarge{ font-size: 180% }
+.large { font-size: 150% }
+.small { font-size: 70% }
+.inverse {
+  background-color: #272822;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+}
