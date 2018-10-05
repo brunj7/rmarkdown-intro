@@ -19,40 +19,10 @@ options(htmltools.dir.version = FALSE)
 ```
 
 
-background-image: url(https://lternet.edu/wp-content/uploads/2018/02/LTER-network-horizontal.png)
+background-image: url(images/stickynotes.png)
 background-position: center
 background-size: contain 
 class: center
-## _please close your laptop_
----
-
-
-# Brainstorming
-
-.xlarge[
-- What is _Reproducible Science_ and why should we care?
-
-- How do you use _data visualization_ ?
-
-- What could we do to make our scientific workflow more reproducible ?
-]
-
----
-
-# Workshop 
-
-.xlarge[
-- Please speak up: **questions**,  **own tips**!!
-
-- Use your **sticky notes** to tell us _how you are doing_
-]
-
---
-
-.xlarge[
-- Keep it fun!
-<img src="images/stickynotes.png", align="right", width="55%" />
-]
 
 
 ---
@@ -66,19 +36,6 @@ class: inverse, center, middle
 # Let's do it !!
 
 ## _please open your laptop_
-
----
-
-# Workshop material
-
-.xlarge[
-http://bit.ly/ASM18_DataViz
-
-
-1. Unzip the archive
-
-2. Create a RStudio project
-]
 
 ---
 
@@ -220,123 +177,6 @@ Note: equivalent of `echo = FALSE`, `results = 'hide'`, `warning = FALSE`, and `
 
 - **fig.cap**: The figure caption
 
-
----
-class: inverse, center, middle
-
-<img align="center" src="images/hex-ggplot2.png" width="65%">
-
----
-class: center, middle
-
-# Exploratory Data Visualization
-
----
-class: center, middle
-
-# Why visualize data?
-
-# The Datasaurus Dozen
-
-
----
-class: bottom
-background-image: url(images/datasaurus_table.png)
-background-position: center
-background-size: 100%
-
-<img align="right" src="images/datasaurus_citation.png" width="65%">
-
----
-class: bottom
-background-image: url(images/datasaurus_plots.png)
-background-position: center
-background-size: 80%
-
-<img align="right" src="images/datasaurus_citation.png" width="65%">
-
----
-class: bottom
-
-# What makes an effective graph?
-
-<img align="center" src="images/effective_graph.png" width="110%">
-
-
-
-Creating more effective graphs by Robbins `ggplot2` by Wickham
-
-
----
-class: center, middle
-
-.xlarge[`ggplot2`: A layered grammar of graphics]
-
----
-
-# What is this?
-
-<img align="center" src="images/scatter0_all.png" width="65%">
-
----
-
-## What is this? A coordinate system
-
-
-<img align="center" src="images/scatter1_axis.png" width="55%">
-
----
-
-## What is this? A coordinate system **AND** data and aesthetics
-
-<img align="center" src="images/scatter2_labels.png" width="65%">
-
-
----
-
-## What is this? A coordinate system, data and aesthetics **AND** geometric objects
-
-<img align="center" src="images/scatter3_dots.png" width="65%">
-
----
-
-
-## What is this? A coordinate system data and aesthetics and geometric objects **AND** scale
-
-<img align="center" src="images/scatter4_scales.png" width="65%">
-
----
-
-## What is this? A coordinate system data and aesthetics and geometric objects and scale **AND** statistical transformations
-
-<img align="center" src="images/scatter5_regression.png" width="55%">
-
----
-
-## What is this? A coordinate system data and aesthetics and geometric objects and scale and statistical transformations **AND** Faceting
-
-<img align="center" src="images/scatter6_facette.png" width="100%">
-
----
-
-# Format for this ggplot2 object
-
-<br>
-
-
-
-```{r ggplot2, eval=FALSE, tidy=FALSE}
-ggplot(Data, aes(x=Var1, y=Var2)) + geom_point() + 
-geom_smooth() +  
-scale_x_log10() + scale_y_log10() +  
-facet_wrap(~Group)
-```
-
-
----
-class: inverse, center, middle
-
-## _please open your laptop and open the script:_ `ggplot2_intro.R`
 
 ---
 class: inverse, center, middle
