@@ -3,8 +3,8 @@
 This is a 1h-1h30 workshop given for UCSB [Eco-Data-Science Group](https://eco-data-science.github.io/) on 2018/10/9
 
 There are 2 main documents:
-- Presentation deck: 
-- R Markdown document we will be playing with: 
+- Presentation deck: https://brunj7.github.io/rmarkdown-intro/rmarkdown-intro_deck.html
+- R Markdown document we will be playing with: [rmarkdown-myfirst.Rmd](rmarkdown-myfirst.Rmd)
 
 
 ## Preparing the workshop
