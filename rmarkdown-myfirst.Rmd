@@ -161,7 +161,17 @@ fig_caps("sepmed", display = "num")
 
 **For more advanced caption feature and cross-references, see [`bookdown`](https://bookdown.org/yihui/bookdown/figures.html#figures)**
 
+---
 
+<img src="images/challenge.png" align="left" alt="Question" /> 
+
+### Exercise
+
+<br>
+
+- Using `captioner` update our previous figure caption
+
+--
 
 # Tables
 
@@ -381,7 +391,7 @@ We can add the following citation:
 Most of this material and more can be found in [@xie_r_2018]
 ```
 
-The References will be added at the bottom of the document when knitted. Note that you will have to add `# References` header at the end of your Rmakrdown document.
+The References will be added at the bottom of the document when knitted. Note that you will have to add `# References` header at the end of your R Markdown document.
 
 ---
 
@@ -391,6 +401,6 @@ The References will be added at the bottom of the document when knitted. Note th
 
 <br>
 
-Write a sentence thanking  `R`, `RStudio` and the `rmarkdown` teams for their awsome tools
+Write a sentence thanking  `R`, `RStudio` and the `rmarkdown` teams for their awesome tools
 
 ---
