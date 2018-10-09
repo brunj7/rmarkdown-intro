@@ -70,18 +70,20 @@ Opening the link in a new window (R Markdown): [LTER](http://www.lternet.edu){ta
 **Task 1**
 
 - Insert the `rmarkdown` hex sticker (http://hexb.in/hexagons/rmarkdown.png) centered in this document and add a legend 
-- Add some text describing the `R markdown` and list 2-3 things you think you will like about it
+- Add some text describing the `R markdown` and list 2-3 things you (think you will) like about it
 - Add a URL to the github repository of the package
-- **Bonus**: How would you make sure the it has a height of 2"? 
+- **Bonus**: How would you make sure the image as a height of 2"? 
 
 **Task 2**
 
 - Go on the giphy website: https://giphy.com/ 
-- Choose a GiF you like
+- Choose a GIF you like
 - Add it to your document in a way that you can see it animated
 
-
 _DONE?! High-Five the cat then!_
+
+
+
 
 ```{r, cat five, out.width='50%', fig.align="center", fig.cap="Checked!!", echo=FALSE}
 knitr::include_graphics("https://media.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif")
@@ -120,7 +122,7 @@ iris_avg
 
 **Task**
 
-Well, we do not want the `Tidyverse` message in our final document. What should you try to change to the above code chunk to  do so?
+Well, we do not want the `Tidyverse` message in our final document. What should you try to change to the above code chunk to do so?
 
 ---
 
@@ -170,6 +172,7 @@ fig_caps("sepmed", display = "num")
 <br>
 
 - Using `captioner` update our previous figure caption
+- *Bonus*: add another plot with a new legend
 
 --
 
