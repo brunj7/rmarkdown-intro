@@ -24,6 +24,21 @@ background-position: center
 background-size: contain 
 class: center
 
+---
+class: middle
+
+<img align="left" src="images/R_logo.png" width="35%" />
+
+---
+class: middle
+
+<img align="right" src="images/markdown-logo.png" width="40%" />
+
+---
+background-image: url(images/hex-rmarkdown-fake.png)
+background-position: center
+background-size: contain
+
 
 ---
 background-image: url(images/hex-rmarkdown.png)
