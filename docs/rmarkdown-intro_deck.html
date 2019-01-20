@@ -14,7 +14,7 @@ class: center, middle, inverse, title-slide
 # Making your work reproducible
 ## with <code>Rmarkdown</code>
 ### Julien Brun, NCEAS
-### Eco-Data-Science, 2018-10-09
+### CSC, 2019-01-22
 
 ---
 
@@ -156,13 +156,24 @@ _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibilit
 _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibility-guide/sections/tools/)_
 ]
 
+
+---
+class: bottom
+background-image: url(images/personifr-rmarkdown_AllisonHorst.png)
+background-position: center
+background-size: contain
+
+.footnote[
+_More cool illustrations here: &lt;https://github.com/allisonhorst/stats-illustrations&gt;_
+]
+
+
 ---
 background-image: url(images/markdown-how-it-works.png)
 background-position: center
 background-size: contain
 
 # How is it rendered ?
-
 
 
 ---
@@ -341,6 +352,17 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
 
 <script>
 (function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
   var i, text, code, codes = document.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
@@ -362,7 +384,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);

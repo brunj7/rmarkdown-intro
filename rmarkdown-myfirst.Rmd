@@ -38,12 +38,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Using code chunks: 
 
-```{r, LTER logo, out.width='50%', fig.align="right", fig.cap="LTER logo", results='hide'}
+```{r, LTER logo right, out.width='50%', fig.align="right", fig.cap="LTER logo", results="hide"}
   knitr::include_graphics("images/LTER-logo.png")
 ```
 
 
-```{r, LTER logo chunk, out.width='50%', fig.align="center", fig.cap="LTER logo", echo=FALSE}
+```{r, LTER logo left, out.width='50%', fig.align="center", fig.cap="LTER logo", echo=FALSE}
 knitr::include_graphics("./images/LTER-logo.png")
 ```
 
@@ -56,7 +56,6 @@ This will also work: http://www.lternet.edu
 Adding link to a word: [LTER](http://www.lternet.edu)
 
 Opening the link in a new window (R Markdown): [LTER](http://www.lternet.edu){target="_blank"}
-
 
 
 ---
@@ -82,9 +81,6 @@ Opening the link in a new window (R Markdown): [LTER](http://www.lternet.edu){ta
 
 _DONE?! High-Five the cat then!_
 
-
-
-
 ```{r, cat five, out.width='50%', fig.align="center", fig.cap="Checked!!", echo=FALSE}
 knitr::include_graphics("https://media.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif")
 ```
@@ -97,7 +93,7 @@ knitr::include_graphics("https://media.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif"
 ## Insert our first code chunk
 
 - From GUI
-- Using keyboard code chunk: `Ctrl` + `Alt` + `I` (`Cmd` + `Option` + `I` on macOS).
+- Using keyboard code chunk: `Ctrl` + `Alt` + `I` (`Cmd` + `Option` + `I` on macOSX).
 
 ```{r iris median no param}
 
@@ -148,7 +144,7 @@ barplot(iris_avg$Sepal.Length_median, names = iris_avg$Species)
 
 ## Automating figure caption numbering
 
-```{r captioner}
+```{r captioner, eval=FALSE}
 # install.packages("captioner")
 library(captioner)
 fig_caps <- captioner(prefix = "Figure")
@@ -370,7 +366,7 @@ output:
 
 Add your bibliographic file path to the YAML header. Here we are using a `bibtex` file, which is a standard format that most of the Reference manager software can export.
 
-```{YAML biblio}
+```{YAML}
 ---
 title: "intro_rmarkdown"
 author: "Julien Brun, NCEAS"
