@@ -2,7 +2,7 @@
 title: "Making your work reproducible"
 subtitle: "with `Rmarkdown` "
 author: "Julien Brun, NCEAS"
-date: "CSC, 2019-01-22"
+date: "CSC workshops, 2019-01-22"
 output:
   xaringan::moon_reader:
     lib_dir: libs
