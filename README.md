@@ -1,6 +1,6 @@
 # Introduction to `rmarkdown`
 
-This is a 1h-1h30 workshop given for UCSB [Eco-Data-Science Group](https://eco-data-science.github.io/) on 2018/10/9
+This is a 1h-1h30 workshop given at UCSB ([Eco-Data-Science Group](https://eco-data-science.github.io/) and [Center for Scientific Computing (CSC)](http://csc.cnsi.ucsb.edu/docs/seminars-workshops)
 
 There are 2 main documents:
 - Presentation deck: https://brunj7.github.io/rmarkdown-intro/rmarkdown-intro_deck.html
@@ -13,10 +13,10 @@ There are 2 main documents:
 
 We will primarily be using a web browser, `R`, `RStudio`. Please be sure these are all installed on your laptop, as follows:
 
-- **R:** We will use R version 3.5.1, which you can download and install from [CRAN](https://cran.rstudio.com)
+- **R:** We will use  the lastest R version, which you can download and install from [CRAN](https://cran.rstudio.com)
 
 - **RStudio**: RStudio is an excellent front-end (IDE) for R with integrated graphics and coding tools and is recommended (read: required) for this course. It is free and available for both Windows, Mac OS X and Linux.
-To download RStudio (current version is 1.1.456), visit [RStudio's download page](https://www.rstudio.com/products/rstudio/download/).
+To download RStudio, visit [RStudio's download page](https://www.rstudio.com/products/rstudio/download/).
   *If you don't know how up to date your version of RStudio is, please download a recent version and install it*
     
 - **R packages:** Please be sure you have installed or updated the following packages:
