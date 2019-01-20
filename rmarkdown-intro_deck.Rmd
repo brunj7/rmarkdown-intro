@@ -36,12 +36,6 @@ library(icon)
 
 
 ---
-class: inverse, center, middle
-background-image: url(images/nceas-logo-wide.png)
-background-size: contain
-
-
----
 
 # Synthesis Science
 
@@ -66,39 +60,6 @@ Involves:
 <br>
 <br>
 <img align="left" src="images/nceas-logo-wide.png" width="55%" />
-
----
-## Data Science Support
-
-.pull-left[### Working group challenges
-- No common or compatible tools
-
-- Various data providers
-
-- Facilitate new data ingestion
-
-- Data and workflow centralization
-
-- Reproducible
-
-- Re-usable
-]
-
---
-
-.pull-right[### Solutions
-- Collaborative environment
-
-- Data management plan
-
-- Data processing pipelines
-
-- Scaling analysis on NCEAS servers
-
-- Scripted data analysis
-
-- Preserving data and products
-]
 
 
 ---
