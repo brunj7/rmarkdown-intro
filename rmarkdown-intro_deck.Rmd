@@ -2,7 +2,7 @@
 title: "Making your work reproducible"
 subtitle: "with `Rmarkdown` "
 author: "Julien Brun, NCEAS"
-date: "Eco-Data-Science, 2018-10-09"
+date: "CSC, 2019-01-22"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -153,13 +153,19 @@ _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibilit
 _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibility-guide/sections/tools/)_
 ]
 
+
+---
+background-image: url(images/personifr-rmarkdown_AllisonHorst.png)
+background-position: center
+background-size: contain
+
+
 ---
 background-image: url(images/markdown-how-it-works.png)
 background-position: center
 background-size: contain
 
 # How is it rendered ?
-
 
 
 ---
