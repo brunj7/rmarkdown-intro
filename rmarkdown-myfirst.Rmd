@@ -140,35 +140,7 @@ barplot(iris_avg$Sepal.Length_median, names = iris_avg$Species)
 - Add a legend to your plot
 - Make the figure 8" wide
 
----
 
-## Automating figure caption numbering
-
-```{r captioner, eval=FALSE}
-# install.packages("captioner")
-library(captioner)
-fig_caps <- captioner(prefix = "Figure")
-fig_caps("sepmed", "Median Sepal Length")
-# For the caption
-fig_caps("sepmed")
-# For the citation
-fig_caps("sepmed", display = "cite")
-# For the number only
-fig_caps("sepmed", display = "num")
-```
-
-**For more advanced caption feature and cross-references, see [`bookdown`](https://bookdown.org/yihui/bookdown/figures.html#figures)**
-
----
-
-<img src="images/challenge.png" align="left" alt="Question" /> 
-
-### Exercise
-
-<br>
-
-- Using `captioner` update our previous figure caption
-- *Bonus*: add another plot with a new legend
 
 --
 
@@ -361,6 +333,37 @@ output:
     keep_md: true
 ---
 ```
+
+---
+
+## Automating figure caption numbering
+
+```{r captioner, eval=FALSE}
+# install.packages("captioner")
+library(captioner)
+fig_caps <- captioner(prefix = "Figure")
+fig_caps("sepmed", "Median Sepal Length")
+# For the caption
+fig_caps("sepmed")
+# For the citation
+fig_caps("sepmed", display = "cite")
+# For the number only
+fig_caps("sepmed", display = "num")
+```
+
+**For more advanced caption feature and cross-references, see [`bookdown`](https://bookdown.org/yihui/bookdown/figures.html#figures)**
+
+---
+
+<img src="images/challenge.png" align="left" alt="Question" /> 
+
+### Exercise
+
+<br>
+
+- Using `captioner` update our previous figure caption
+- *Bonus*: add another plot with a new legend
+
 
 # Bibliography
 
