@@ -155,9 +155,14 @@ _From: [RopenSci reproducibility guide](http://ropensci.github.io/reproducibilit
 
 
 ---
+class: bottom
 background-image: url(images/personifr-rmarkdown_AllisonHorst.png)
 background-position: center
 background-size: contain
+
+.footnote[
+_More cool illustrations here: <https://github.com/allisonhorst/stats-illustrations>_
+]
 
 
 ---
