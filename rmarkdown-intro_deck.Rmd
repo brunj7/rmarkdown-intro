@@ -123,9 +123,11 @@ _Note: In this workshop we will use the [RStudio IDE](https://www.rstudio.com/pr
 .center[![](images/knit-button.png)]
 
 <br>
+<br>
+<br>
 
-.large[Note: you could also enter this command at the R console:  `rmarkdown::render("rmkdown1.Rmd")`
-]
+_Note: you could also enter this command at the R console:  `rmarkdown::render("rmkdown1.Rmd")`_
+
 
 ---
 class: inverse, center, middle
@@ -203,9 +205,8 @@ background-image: url(images/personifr-rmarkdown_AllisonHorst.png)
 background-position: center
 background-size: contain
 
-.footnote[
+
 _More cool illustrations here: <https://github.com/allisonhorst/stats-illustrations>_
-]
 
 
 ---
@@ -347,7 +348,7 @@ class: inverse, center, middle
 
 
 ## One step towards reproducibility...  
-## but many other aspects of your workflow still to be considered !!
+## but many other aspects of your workflow still need to be considered !!
 
 
 ---
