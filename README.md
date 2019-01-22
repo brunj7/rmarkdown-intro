@@ -1,6 +1,6 @@
 # Introduction to `rmarkdown`
 
-This is a 1h-1h30 workshop given at UCSB ([Eco-Data-Science Group](https://eco-data-science.github.io/) and [Center for Scientific Computing (CSC)](http://csc.cnsi.ucsb.edu/docs/seminars-workshops)
+This is a 1h-1h30 workshop given at UCSB ([Eco-Data-Science Group](https://eco-data-science.github.io/) and [Center for Scientific Computing (CSC)](http://csc.cnsi.ucsb.edu/docs/seminars-workshops))
 
 There are 2 main documents:
 - Presentation deck: https://brunj7.github.io/rmarkdown-intro/rmarkdown-intro_deck.html
