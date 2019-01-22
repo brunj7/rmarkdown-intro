@@ -15,9 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Markdown way: 
 
-```
+Local image:
 ![LTER logo](images/LTER-logo.png)
-```
+
+Using an URL:
 ![LTER logo](https://lternet.edu/wp-content/uploads/2018/02/LTER-network-horizontal.png)
 
 **=> not much control!!!**
@@ -29,21 +30,21 @@ knitr::opts_chunk$set(echo = TRUE)
 <br>
 
 <img src="images/LTER-logo.png" width="50%" align="right" alt="LTER logo" />
-```
-<img src="images/LTER-logo.png" width="50%" align="right" alt="LTER logo" />
-```
+
 
 <br>
 <br>
+<br>
+<br>
 
-- Using code chunks: 
+- Using code chunks, aka the `rmarkdown` way: 
 
-```{r, LTER logo right, out.width='50%', fig.align="right", fig.cap="LTER logo", results="hide"}
+```{r LTER logo center, out.width='50%', fig.align="center", fig.cap="LTER logo center"}
   knitr::include_graphics("images/LTER-logo.png")
 ```
 
 
-```{r, LTER logo left, out.width='50%', fig.align="center", fig.cap="LTER logo", echo=FALSE}
+```{r LTER logo left, out.width='50%', fig.align="left", fig.cap="LTER logo left"}
 knitr::include_graphics("./images/LTER-logo.png")
 ```
 
@@ -62,7 +63,7 @@ Opening the link in a new window (R Markdown): [LTER](http://www.lternet.edu){ta
 
 <img src="images/challenge.png" align="left" alt="Question" /> 
 
-### Exercise
+## Exercise
 
 <br>
 
@@ -90,7 +91,7 @@ knitr::include_graphics("https://media.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif"
 
 # Code Chunk
 
-## Insert our first code chunk
+## Insert a code chunk
 
 - From GUI
 - Using keyboard code chunk: `Ctrl` + `Alt` + `I` (`Cmd` + `Option` + `I` on macOSX).
@@ -99,11 +100,16 @@ knitr::include_graphics("https://media.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif"
 
 library(tidyverse)
 
-iris_avg <- iris %>%
+# look at the data
+head(iris)
+
+# Compute the median
+iris_median <- iris %>%
   group_by(Species) %>%
   summarise_all(funs(median = median))
 
-iris_avg
+# Look at the results
+iris_median
 
 ```
 
@@ -125,7 +131,7 @@ Well, we do not want the `Tidyverse` message in our final document. What should 
 ## Some basic plotting
 
 ```{r iris median plot}
-barplot(iris_avg$Sepal.Length_median, names = iris_avg$Species)
+barplot(iris_median$Sepal.Length_median, names = iris_median$Species)
 ```
 
 ---
@@ -142,7 +148,7 @@ barplot(iris_avg$Sepal.Length_median, names = iris_avg$Species)
 
 
 
---
+---
 
 # Tables
 
@@ -160,7 +166,7 @@ barplot(iris_avg$Sepal.Length_median, names = iris_avg$Species)
 ## You can render tables of data frames in R Markdown
 
 ```{r my first table}
-knitr::kable(iris_avg, caption = "Iris Median data")
+knitr::kable(iris_median, caption = "Iris Median data")
 ```
 
 But not that convenient if the table is large:
@@ -169,6 +175,7 @@ But not that convenient if the table is large:
 knitr::kable(iris, caption = "Iris data")
 ```
 
+---
 
 # Embedding interactive elements - HTML widgets
 
@@ -204,6 +211,7 @@ lter_sites <- read_csv("./data/LTER_sites.csv")
 leaflet(data=lter_sites) %>% addTiles() %>% setView(-98, 40, zoom = 4) %>% addCircleMarkers(~Longitude, ~Latitude, popup = ~Code)
 ```
 
+---
 
 # Inline code 
 
@@ -224,7 +232,7 @@ This will render as:
 
 <img src="images/challenge.png" align="left" alt="Question" /> 
 
-### Exercise
+## Exercise
 
 <br>
 
@@ -292,7 +300,7 @@ output:
 
 <img src="images/challenge.png" align="left" alt="Question" /> 
 
-### Exercise
+## Exercise
 
 <br>
 
@@ -357,13 +365,14 @@ fig_caps("sepmed", display = "num")
 
 <img src="images/challenge.png" align="left" alt="Question" /> 
 
-### Exercise
+## Exercise
 
 <br>
 
 - Using `captioner` update our previous figure caption
 - *Bonus*: add another plot with a new legend
 
+---
 
 # Bibliography
 
@@ -399,7 +408,7 @@ The References will be added at the bottom of the document when knitted. Note th
 
 <img src="images/challenge.png" align="left" alt="Question" /> 
 
-### Exercise
+## Exercise
 
 <br>
 
